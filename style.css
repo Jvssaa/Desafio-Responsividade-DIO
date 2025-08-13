@@ -4,24 +4,216 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1,h2{
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+header h1{
+    font-weight: 400;
+    color: white;
     font-family: 'Luckiest Guy';
 }
 
-p,a{
+header p{
+    font-size: 1rem;
+    color: white;
+}
+
+.buttom{
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0px;
+    font-weight: 400;
+    
+}
+
+#download{
+    color: black;
+    background-color: white;
+}
+
+#open{
+    color: white;
+    background-color: black;
+}
+
+#section-4 h2{
+    font-family:'Luckiest Guy' ;
+}
+
+#section-1 h2,#section-2 h2,#section-3 h2,p,a{
     font-family: 'Open Sans';
 }
 
+#section-2,#section-4{
+    background-color: rgb(246,246,246);
+}
+
+
+#buttoms{
+    display: flex;
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    align-content: center;
+    display: flex;
+    background-color: rgb(35, 39, 42);
+    justify-content: center;
+}
+
+
 @media screen and (max-width: 576px) {
-    
-body{}
+header{
+    background-image: url(assets/mobile/Header\ Background.png);
+    height: 65vh;
+    flex-direction: column;
+    padding: 7vh 20px;
+    row-gap: 1rem;
+}
+
+header h1{
+    font-size: 2rem;
+    text-align: left;
+    margin-right: 40vw;
+}
+
+header p{
+    text-align: left;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+    background-color: white;
+}
+
+#section-4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#section-4 picture{
+    order: 2;
+}
+
+.section-text{
+    gap: 0px 20px;
+}
+
+h2{
+    font-weight: 800;
+}
+
+img{
+    max-width: 100%;
+}
+
+#buttoms{
+    flex-direction: column;
+    gap: 1rem;
+}
 
 }
 
+
 @media screen and (min-width: 577px) {
-    
 
+ header{
+    background-image: url(assets/desk/HeaderBackground.svg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20vh 30vw;
+    height: 40vh;
+ }
 
+ header h1{
+    font-size: 3rem;
+    padding: 0px 10vw;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ header p{
+    text-align: center;
+ }
+
+ #buttoms{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .buttom{
+    padding: 0.8rem 2rem;
+ }
+
+ section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 15vw;
+    gap: 0px 2rem;
+ }
+
+ .section-text{
+    gap: 2rem;
+ }
+
+#section-1 h2,#section-2 h2,#section-3 h2{
+    font-size: 3.2rem;
+    text-align: left;
+    padding-right: 19rem;
+}
+
+#section-1 p,#section-2 p,#section-3 p{
+    padding-right: 22rem;
+}
+
+#section-2 picture, #section-4 picture{
+    order: 2;
+}
+
+#section-4{
+    flex-direction: column;
+}
+
+#section-4 .section-text{
+    align-items: center;
+    justify-content: center;
+}
+
+#section-4 .section-text h2{
+    font-size: 3rem;
+    padding: 0px 25rem;
+    text-align: center;
+}
+
+#section-4 .section-text p{
+    text-align: center;
+    padding: 0px 16rem;
+}
 }
